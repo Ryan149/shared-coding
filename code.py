@@ -6,8 +6,8 @@ for s in LL:
   for i in range(0,len(s)-4):
     next[s[i:i+4]]=s[i+4]
 
-begin="MGLR"
-seq=begin
+begin="MGLR"#In order to figure out the beginning sequence of four letters, we could run a count function and if the value is >2, then remove that sequence from the "begin" list, until we are left with one string of four letters
+seq=begin 
 
 while True:
       if begin in next:
